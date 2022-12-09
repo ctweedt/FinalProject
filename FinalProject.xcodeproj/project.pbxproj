@@ -8,17 +8,77 @@
 
 /* Begin PBXBuildFile section */
 		FDB661612936D03800268869 /* FinalProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB661602936D03800268869 /* FinalProjectApp.swift */; };
-		FDB661632936D03800268869 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB661622936D03800268869 /* ContentView.swift */; };
+		FDB661632936D03800268869 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB661622936D03800268869 /* LoginView.swift */; };
 		FDB661652936D03A00268869 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB661642936D03A00268869 /* Assets.xcassets */; };
 		FDB661682936D03A00268869 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB661672936D03A00268869 /* Preview Assets.xcassets */; };
+		FDB661702936F16500268869 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FDB6616F2936F16500268869 /* FirebaseAuth */; };
+		FDB661722936F16500268869 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FDB661712936F16500268869 /* FirebaseFirestore */; };
+		FDB661742936F16500268869 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FDB661732936F16500268869 /* FirebaseFirestoreSwift */; };
+		FDB661762936F16500268869 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FDB661752936F16500268869 /* FirebaseStorage */; };
+		FDB661782936FA5400268869 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDB661772936FA5400268869 /* GoogleService-Info.plist */; };
+		FDB6617A2937131200268869 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB661792937131200268869 /* MainView.swift */; };
+		FDB6617C29371B7300268869 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6617B29371B7300268869 /* PlaceViewModel.swift */; };
+		FDB6617E29371BA200268869 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6617D29371BA200268869 /* Place.swift */; };
+		FDB661822938031300268869 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB661812938031300268869 /* LocationView.swift */; };
+		FDB6619E293807BC00268869 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6619D293807BC00268869 /* LocationManager.swift */; };
+		FDB661A629385BEE00268869 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB661A529385BEE00268869 /* TextFieldView.swift */; };
+		FDDBE6C42941391400A5647E /* SecondWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBE6C32941391400A5647E /* SecondWeatherViewModel.swift */; };
+		FDDBE6D02941795300A5647E /* RestaurantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBE6CF2941795300A5647E /* RestaurantViewModel.swift */; };
+		FDDBE6D229417A3500A5647E /* RestaurantLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBE6D129417A3500A5647E /* RestaurantLocation.swift */; };
+		FDDBE6D72941851600A5647E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBE6D62941851600A5647E /* MapView.swift */; };
+		FDDBE6D929418BAC00A5647E /* RestaurantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBE6D829418BAC00A5647E /* RestaurantModel.swift */; };
+		FDDBE6DB2941963C00A5647E /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBE6DA2941963C00A5647E /* ReviewView.swift */; };
+		FDDBE6DD29419D2900A5647E /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBE6DC29419D2900A5647E /* RestaurantDetailView.swift */; };
+		FDDBE6DF2941ACF300A5647E /* RestaurantLookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBE6DE2941ACF300A5647E /* RestaurantLookupView.swift */; };
+		FDDBE6E12941B2E900A5647E /* SavePlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBE6E02941B2E900A5647E /* SavePlaceViewModel.swift */; };
+		FDDBE6E32941BE4200A5647E /* BucketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBE6E22941BE4200A5647E /* BucketListView.swift */; };
+		FDDBE6E52942571D00A5647E /* BucketListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBE6E42942571D00A5647E /* BucketListDetailView.swift */; };
+		FDDBE6E7294257B500A5647E /* BucketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBE6E6294257B500A5647E /* BucketViewModel.swift */; };
+		FDDBE6E9294257D300A5647E /* BucketList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBE6E8294257D300A5647E /* BucketList.swift */; };
+		FDDBE6EB29425B6000A5647E /* Place2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBE6EA29425B6000A5647E /* Place2.swift */; };
+		FDDBE6ED2942613B00A5647E /* SaveBucketListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBE6EC2942613B00A5647E /* SaveBucketListViewModel.swift */; };
+		FDDBE7192943061E00A5647E /* SaveImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBE7182943061E00A5647E /* SaveImageViewModel.swift */; };
+		FDDBE72029430CEF00A5647E /* PlaceLookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBE71F29430CEF00A5647E /* PlaceLookupView.swift */; };
+		FDFA2EA829430F2F00D72D1D /* BucketLookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA2EA729430F2F00D72D1D /* BucketLookupView.swift */; };
+		FDFA2EAA2943138000D72D1D /* ReviewStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA2EA92943138000D72D1D /* ReviewStruct.swift */; };
+		FDFA2EAC294319F500D72D1D /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA2EAB294319F500D72D1D /* RatingView.swift */; };
+		FDFA2EAF2943AF3600D72D1D /* PlaceLookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA2EAE2943AF3600D72D1D /* PlaceLookupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FDB6615D2936D03800268869 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB6615D2936D03800268869 /* Travel Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travel Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB661602936D03800268869 /* FinalProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectApp.swift; sourceTree = "<group>"; };
-		FDB661622936D03800268869 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FDB661622936D03800268869 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FDB661642936D03A00268869 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDB661672936D03A00268869 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FDB661772936FA5400268869 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FDB661792937131200268869 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FDB6617B29371B7300268869 /* PlaceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
+		FDB6617D29371BA200268869 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		FDB661812938031300268869 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		FDB6619D293807BC00268869 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		FDB661A529385BEE00268869 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		FDDBE6C32941391400A5647E /* SecondWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondWeatherViewModel.swift; sourceTree = "<group>"; };
+		FDDBE6CF2941795300A5647E /* RestaurantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModel.swift; sourceTree = "<group>"; };
+		FDDBE6D129417A3500A5647E /* RestaurantLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantLocation.swift; sourceTree = "<group>"; };
+		FDDBE6D62941851600A5647E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		FDDBE6D829418BAC00A5647E /* RestaurantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantModel.swift; sourceTree = "<group>"; };
+		FDDBE6DA2941963C00A5647E /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		FDDBE6DC29419D2900A5647E /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
+		FDDBE6DE2941ACF300A5647E /* RestaurantLookupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantLookupView.swift; sourceTree = "<group>"; };
+		FDDBE6E02941B2E900A5647E /* SavePlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavePlaceViewModel.swift; sourceTree = "<group>"; };
+		FDDBE6E22941BE4200A5647E /* BucketListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListView.swift; sourceTree = "<group>"; };
+		FDDBE6E42942571D00A5647E /* BucketListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListDetailView.swift; sourceTree = "<group>"; };
+		FDDBE6E6294257B500A5647E /* BucketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketViewModel.swift; sourceTree = "<group>"; };
+		FDDBE6E8294257D300A5647E /* BucketList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketList.swift; sourceTree = "<group>"; };
+		FDDBE6EA29425B6000A5647E /* Place2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place2.swift; sourceTree = "<group>"; };
+		FDDBE6EC2942613B00A5647E /* SaveBucketListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveBucketListViewModel.swift; sourceTree = "<group>"; };
+		FDDBE7182943061E00A5647E /* SaveImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveImageViewModel.swift; sourceTree = "<group>"; };
+		FDDBE71F29430CEF00A5647E /* PlaceLookupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlaceLookupView.swift; path = ../../../PlaceLookupDemo/PlaceLookupDemo/PlaceLookupView.swift; sourceTree = "<group>"; };
+		FDFA2EA729430F2F00D72D1D /* BucketLookupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BucketLookupView.swift; sourceTree = "<group>"; };
+		FDFA2EA92943138000D72D1D /* ReviewStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewStruct.swift; sourceTree = "<group>"; };
+		FDFA2EAB294319F500D72D1D /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		FDFA2EAE2943AF3600D72D1D /* PlaceLookupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlaceLookupView.swift; path = ../../../PlaceLookupDemo/PlaceLookupDemo/PlaceLookupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +86,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB661702936F16500268869 /* FirebaseAuth in Frameworks */,
+				FDB661762936F16500268869 /* FirebaseStorage in Frameworks */,
+				FDB661722936F16500268869 /* FirebaseFirestore in Frameworks */,
+				FDB661742936F16500268869 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,7 +107,7 @@
 		FDB6615E2936D03800268869 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FDB6615D2936D03800268869 /* FinalProject.app */,
+				FDB6615D2936D03800268869 /* Travel Buddy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,8 +116,11 @@
 			isa = PBXGroup;
 			children = (
 				FDB661602936D03800268869 /* FinalProjectApp.swift */,
-				FDB661622936D03800268869 /* ContentView.swift */,
+				FDDBE71A29430CC000A5647E /* Views */,
+				FDFA2EAD29431EC500D72D1D /* ViewModels */,
+				FDFA2EB02943AF6300D72D1D /* Models */,
 				FDB661642936D03A00268869 /* Assets.xcassets */,
+				FDB661772936FA5400268869 /* GoogleService-Info.plist */,
 				FDB661662936D03A00268869 /* Preview Content */,
 			);
 			path = FinalProject;
@@ -65,6 +132,55 @@
 				FDB661672936D03A00268869 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FDDBE71A29430CC000A5647E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FDB661622936D03800268869 /* LoginView.swift */,
+				FDB661792937131200268869 /* MainView.swift */,
+				FDB661A529385BEE00268869 /* TextFieldView.swift */,
+				FDB661812938031300268869 /* LocationView.swift */,
+				FDDBE6D62941851600A5647E /* MapView.swift */,
+				FDDBE6E22941BE4200A5647E /* BucketListView.swift */,
+				FDDBE6DA2941963C00A5647E /* ReviewView.swift */,
+				FDDBE71F29430CEF00A5647E /* PlaceLookupView.swift */,
+				FDDBE6DE2941ACF300A5647E /* RestaurantLookupView.swift */,
+				FDFA2EAB294319F500D72D1D /* RatingView.swift */,
+				FDDBE6DC29419D2900A5647E /* RestaurantDetailView.swift */,
+				FDFA2EA729430F2F00D72D1D /* BucketLookupView.swift */,
+				FDDBE6E42942571D00A5647E /* BucketListDetailView.swift */,
+				FDFA2EAE2943AF3600D72D1D /* PlaceLookupView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FDFA2EAD29431EC500D72D1D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FDDBE6C32941391400A5647E /* SecondWeatherViewModel.swift */,
+				FDDBE6D829418BAC00A5647E /* RestaurantModel.swift */,
+				FDB6617B29371B7300268869 /* PlaceViewModel.swift */,
+				FDDBE6E6294257B500A5647E /* BucketViewModel.swift */,
+				FDDBE6CF2941795300A5647E /* RestaurantViewModel.swift */,
+				FDDBE6EC2942613B00A5647E /* SaveBucketListViewModel.swift */,
+				FDDBE6E02941B2E900A5647E /* SavePlaceViewModel.swift */,
+				FDB6619D293807BC00268869 /* LocationManager.swift */,
+				FDDBE7182943061E00A5647E /* SaveImageViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FDFA2EB02943AF6300D72D1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FDDBE6D129417A3500A5647E /* RestaurantLocation.swift */,
+				FDFA2EA92943138000D72D1D /* ReviewStruct.swift */,
+				FDB6617D29371BA200268869 /* Place.swift */,
+				FDDBE6EA29425B6000A5647E /* Place2.swift */,
+				FDDBE6E8294257D300A5647E /* BucketList.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,8 +199,14 @@
 			dependencies = (
 			);
 			name = FinalProject;
+			packageProductDependencies = (
+				FDB6616F2936F16500268869 /* FirebaseAuth */,
+				FDB661712936F16500268869 /* FirebaseFirestore */,
+				FDB661732936F16500268869 /* FirebaseFirestoreSwift */,
+				FDB661752936F16500268869 /* FirebaseStorage */,
+			);
 			productName = FinalProject;
-			productReference = FDB6615D2936D03800268869 /* FinalProject.app */;
+			productReference = FDB6615D2936D03800268869 /* Travel Buddy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,6 +233,9 @@
 				Base,
 			);
 			mainGroup = FDB661542936D03800268869;
+			packageReferences = (
+				FDB6616E2936F16500268869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = FDB6615E2936D03800268869 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +252,7 @@
 			files = (
 				FDB661682936D03A00268869 /* Preview Assets.xcassets in Resources */,
 				FDB661652936D03A00268869 /* Assets.xcassets in Resources */,
+				FDB661782936FA5400268869 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +263,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDB661632936D03800268869 /* ContentView.swift in Sources */,
+				FDDBE6E32941BE4200A5647E /* BucketListView.swift in Sources */,
+				FDB6617C29371B7300268869 /* PlaceViewModel.swift in Sources */,
+				FDFA2EAF2943AF3600D72D1D /* PlaceLookupView.swift in Sources */,
+				FDDBE72029430CEF00A5647E /* PlaceLookupView.swift in Sources */,
+				FDFA2EAC294319F500D72D1D /* RatingView.swift in Sources */,
+				FDDBE6C42941391400A5647E /* SecondWeatherViewModel.swift in Sources */,
+				FDB661822938031300268869 /* LocationView.swift in Sources */,
+				FDB661632936D03800268869 /* LoginView.swift in Sources */,
+				FDDBE6DD29419D2900A5647E /* RestaurantDetailView.swift in Sources */,
+				FDDBE6E9294257D300A5647E /* BucketList.swift in Sources */,
+				FDDBE6E7294257B500A5647E /* BucketViewModel.swift in Sources */,
+				FDDBE6DF2941ACF300A5647E /* RestaurantLookupView.swift in Sources */,
+				FDDBE6D929418BAC00A5647E /* RestaurantModel.swift in Sources */,
+				FDB6619E293807BC00268869 /* LocationManager.swift in Sources */,
+				FDDBE6ED2942613B00A5647E /* SaveBucketListViewModel.swift in Sources */,
+				FDDBE6DB2941963C00A5647E /* ReviewView.swift in Sources */,
+				FDDBE6EB29425B6000A5647E /* Place2.swift in Sources */,
+				FDDBE6D72941851600A5647E /* MapView.swift in Sources */,
+				FDB661A629385BEE00268869 /* TextFieldView.swift in Sources */,
+				FDDBE6D02941795300A5647E /* RestaurantViewModel.swift in Sources */,
+				FDFA2EA829430F2F00D72D1D /* BucketLookupView.swift in Sources */,
+				FDFA2EAA2943138000D72D1D /* ReviewStruct.swift in Sources */,
+				FDDBE7192943061E00A5647E /* SaveImageViewModel.swift in Sources */,
+				FDDBE6E52942571D00A5647E /* BucketListDetailView.swift in Sources */,
+				FDB6617A2937131200268869 /* MainView.swift in Sources */,
+				FDDBE6D229417A3500A5647E /* RestaurantLocation.swift in Sources */,
 				FDB661612936D03800268869 /* FinalProjectApp.swift in Sources */,
+				FDDBE6E12941B2E900A5647E /* SavePlaceViewModel.swift in Sources */,
+				FDB6617E29371BA200268869 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +434,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tweedt.FinalProject;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Travel Buddy";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,7 +463,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tweedt.FinalProject;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Travel Buddy";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,6 +492,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FDB6616E2936F16500268869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FDB6616F2936F16500268869 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDB6616E2936F16500268869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FDB661712936F16500268869 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDB6616E2936F16500268869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		FDB661732936F16500268869 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDB6616E2936F16500268869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		FDB661752936F16500268869 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDB6616E2936F16500268869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FDB661552936D03800268869 /* Project object */;
 }
